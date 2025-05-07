@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff8e1; /* Morning theme background */
+    color: #333;
+}
+
+.header {
+    text-align: center;
+    background-color: #ffcc80; /* Pancake-like color */
+    padding: 20px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 3em;
+}
+
+.header p {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #ffe0b2; /* Light orange */
+    padding: 10px 0;
+}
+
+.navbar a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #ff8c00; /* Bright orange for hover */
+}
+
+.about, .products, .ingredients {
+    padding: 20px;
+    text-align: center;
+}
+
+.products .product {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ffcc80;
+    border-radius: 5px;
+    background-color: #fff3e0; /* Light cream */
+}
+
+.ingredients ul {
+    list-style-type: disc;
+    text-align: left;
+    display: inline-block;
+}
+
+.footer {
+    text-align: center;
+    background-color: #ffcc80;
+    padding: 10px;
+    margin-top: 20px;
+}
