@@ -7,7 +7,6 @@ body {
 }
 
 header {
-    background: #fdd835; /* Vibrant yellow for energy */
     color: #fff;
     text-align: center;
     padding: 2rem 1rem;
@@ -58,21 +57,36 @@ nav ul li a:hover {
 .product-images {
     display: flex;
     flex-direction: row;
-    gap: 16px; /* adjust spacing between images as desired */
-    justify-content: center; /* centers the images horizontally */
-    align-items: center; /* aligns images vertically (if different heights) */
+    gap: 16px;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x: auto;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    scrollbar-width: thin;
+    scrollbar-color: #ccc #fff;
 }
 
 .product-images img {
-    max-width: 150px; /* adjust size as desired */
+    max-width: 150px;
     height: auto;
-    border-radius: 8px; /* optional: rounded corners */
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08); /* optional: subtle shadow */
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    flex: 0 0 auto;
+    display: block;
 }
 
 main {
-    margin-top: 120px;         /* adjust to your header's height */
-    padding: 2rem;
+    margin-top: 120px;
+    padding: 2rem 1rem;
+}
+
+@media (max-width: 600px) {
+    .product-images img {
+        max-width: 100px;
+    }
 }
 
 section {
