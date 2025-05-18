@@ -7,17 +7,20 @@ body {
 }
 
 header {
-    background: #fdd835; /* Vibrant yellow for energy */
+    background: #fdd835 !important; /* Vibrant yellow, force override */
     color: #fff;
     text-align: center;
     padding: 2rem 1rem;
-    position: fixed;          
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
+    opacity: 1; /* Ensure not transparent */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06); /* Optional: slight shadow for contrast */
 }
 
+/* Nav stays slightly darker yellow */
 nav ul {
     display: flex;
     justify-content: center;
