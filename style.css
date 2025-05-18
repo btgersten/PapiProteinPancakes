@@ -88,7 +88,7 @@ main {
 }
 @media (max-width: 600px) {
     main {
-        margin-top: 600px;
+        margin-top: 200px;
         padding: 1rem 0.5rem;
     }
 }
