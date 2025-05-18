@@ -81,5 +81,21 @@
     <footer>
         <p>&copy; 2025 Papi Protein Pancakes. Built for health and happiness.</p>
     </footer>
+    <script>
+    window.addEventListener('DOMContentLoaded', function() {
+        var header = document.querySelector('header');
+        var main = document.querySelector('main');
+        if(header && main) {
+            main.style.marginTop = header.offsetHeight + 'px';
+        }
+    });
+    window.addEventListener('resize', function() {
+        var header = document.querySelector('header');
+        var main = document.querySelector('main');
+        if(header && main) {
+            main.style.marginTop = header.offsetHeight + 'px';
+        }
+    });
+</script>
 </body>
 </html>
