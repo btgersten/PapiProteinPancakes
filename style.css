@@ -85,6 +85,8 @@ nav ul li a:hover {
 main {
     margin-top: 160px; /* Set this to header+nav's total height */
     padding: 2rem 1rem;
+    /* If you keep the footer fixed, add bottom padding here equal to the footer height */
+    /* padding-bottom: 80px; */
 }
 @media (max-width: 600px) {
     main {
@@ -133,7 +135,7 @@ footer {
     background: #388e3c; /* Healthy green for footer */
     color: #fff;
     padding: 1rem;
-    position: fixed;
+    /* Remove position: fixed; so the footer appears after main content */
     width: 100%;
-    bottom: 0;
+    /* bottom: 0; */
 }
