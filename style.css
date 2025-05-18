@@ -50,6 +50,21 @@ nav ul li a:hover {
     font-family: 'Georgia', serif;
 }
 
+.product-images {
+    display: flex;
+    flex-direction: row;
+    gap: 16px; /* adjust spacing between images as desired */
+    justify-content: center; /* centers the images horizontally */
+    align-items: center; /* aligns images vertically (if different heights) */
+}
+
+.product-images img {
+    max-width: 150px; /* adjust size as desired */
+    height: auto;
+    border-radius: 8px; /* optional: rounded corners */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08); /* optional: subtle shadow */
+}
+
 main {
     padding: 2rem;
 }
