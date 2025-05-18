@@ -1,3 +1,7 @@
+html {
+  scroll-padding-top: var(--header-height, 0px);
+}
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
