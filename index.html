@@ -82,20 +82,19 @@
         <p>&copy; 2025 Papi Protein Pancakes. Built for health and happiness.</p>
     </footer>
     <script>
-    window.addEventListener('DOMContentLoaded', function() {
+    function setHeaderHeightVars() {
         var header = document.querySelector('header');
         var main = document.querySelector('main');
-        if(header && main) {
-            main.style.marginTop = header.offsetHeight + 'px';
+            if(header && main) {
+            var headerHeight = header.offsetHeight;
+            // Set main's margin-top so content starts below header
+            main.style.marginTop = headerHeight + 'px';
+            // Set a CSS variable for scroll-padding-top
+            document.documentElement.style.setProperty('--header-height', headerHeight + 'px');
         }
-    });
-    window.addEventListener('resize', function() {
-        var header = document.querySelector('header');
-        var main = document.querySelector('main');
-        if(header && main) {
-            main.style.marginTop = header.offsetHeight + 'px';
-        }
-    });
+    }
+    window.addEventListener('DOMContentLoaded', setHeaderHeightVars);
+    window.addEventListener('resize', setHeaderHeightVars);
     </script>
 </body>
 </html>
