@@ -83,14 +83,12 @@ nav ul li a:hover {
 }
 
 main {
-    margin-top: 160px; /* Set this to header+nav's total height */
+    margin-top: 200px;
     padding: 2rem 1rem;
-    /* If you keep the footer fixed, add bottom padding here equal to the footer height */
-    /* padding-bottom: 80px; */
 }
 @media (max-width: 600px) {
     main {
-        margin-top: 130px; /* Use a bit less for mobile if header is smaller */
+        margin-top: 160px;
         padding: 1rem 0.5rem;
     }
 }
