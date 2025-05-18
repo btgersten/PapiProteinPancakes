@@ -7,24 +7,24 @@ body {
 }
 
 header {
-    background: #fdd835 !important; /* Vibrant yellow, force override */
+    background: #fdd835;
     color: #fff;
     text-align: center;
-    padding: 2rem 1rem;
-    position: fixed;
+    padding: 2rem 1rem 0.5rem 1rem; /* 2rem top, 1rem sides, 0.5rem bottom */
+    position: fixed;          
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
-    opacity: 1; /* Ensure not transparent */
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06); /* Optional: slight shadow for contrast */
+    opacity: 1;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
 }
 
 /* Nav stays slightly darker yellow */
 nav ul {
     display: flex;
     justify-content: center;
-    background: #fbc02d; /* Slightly darker yellow */
+    background: #fbc02d;
     padding: 0.5rem 0;
     list-style: none;
     margin: 0;
@@ -83,13 +83,13 @@ nav ul li a:hover {
 }
 
 main {
-    margin-top: 120px;
+    margin-top: 160px; /* Set this to header+nav's total height */
     padding: 2rem 1rem;
 }
-
 @media (max-width: 600px) {
-    .product-images img {
-        max-width: 100px;
+    main {
+        margin-top: 130px; /* Use a bit less for mobile if header is smaller */
+        padding: 1rem 0.5rem;
     }
 }
 
