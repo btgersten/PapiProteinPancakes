@@ -78,16 +78,13 @@ nav ul li a:hover {
 }
 
 main {
-    margin-top: 230px; /* This should match the true height of your fixed header */
+    margin-top: 180px;
     padding: 2rem 1rem;
 }
 @media (max-width: 600px) {
     main {
-        margin-top: 180px;
+        margin-top: 140px;
         padding: 1rem 0.5rem;
-    }
-    .product-images img {
-        max-width: 100px;
     }
 }
 
