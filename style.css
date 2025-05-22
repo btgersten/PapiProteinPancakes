@@ -265,65 +265,6 @@ a:hover {
   font-style: italic;
 }
 
-
-.extension-badges {
-  display: flex;
-  gap: 1em;
-  margin: 1.2em 0;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.browser-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45em;
-  background: #f0faf4;
-  border-radius: 2em;
-  box-shadow: 0 1px 7px rgba(56, 142, 60, 0.10);
-  padding: 0.28em 1em 0.28em 0.45em;
-  font-weight: 600;
-  font-size: 1em;
-  border: 1.5px solid #e0e0e0;
-  color: #388e3c;
-  margin: 0.3em 0;
-  user-select: none;
-}
-
-.badge-dot {
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  display: inline-block;
-  box-shadow: 0 1px 7px rgba(32,201,32,0.16);
-  border: 2px solid #fff;
-}
-
-.chrome .badge-dot {
-  background: radial-gradient(circle at 70% 30%, #7fff7a 70%, #20c920 100%);
-}
-.firefox .badge-dot {
-  background: radial-gradient(circle at 70% 30%, #ffb86c 65%, #ff6600 100%);
-}
-.edge .badge-dot {
-  background: radial-gradient(circle at 70% 30%, #85e3ff 65%, #0078d7 100%);
-}
-.safari .badge-dot {
-  background: radial-gradient(circle at 70% 30%, #ffeebc 65%, #1c84ff 100%);
-}
-
-.chrome .badge-label { color: #20c920; }
-.firefox .badge-label { color: #ff6600; }
-.edge .badge-label { color: #0078d7; }
-.safari .badge-label { color: #1c84ff; }
-
-.browser-badge:hover {
-  background: #e9f7ef;
-  border-color: #b2f2bb;
-  box-shadow: 0 3px 12px rgba(56,142,60,0.13);
-}
-
-
 footer {
   text-align: center;
   color: #999;
